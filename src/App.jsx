@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='/resume' element={<Resume />} />
         <Route path='/projects' element={<Projects />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
