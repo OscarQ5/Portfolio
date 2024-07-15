@@ -10,13 +10,15 @@ import './App.css'
 function App() {
 
   return (
-    <div className='App'>
+    <div className='d-flex flex-column min-vh-100'>
       <NavBar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/resume' element={<Resume />} />
-        <Route path='/projects' element={<Projects />} />
-      </Routes>
+      <div className="flex-grow-1">
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/resume' element={<Resume />} />
+          <Route path='/projects' element={<Projects />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   )
